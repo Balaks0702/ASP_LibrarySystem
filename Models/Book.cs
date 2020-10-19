@@ -11,6 +11,7 @@ namespace F20_BookClub.Models
     {
         public int BookId { get; set; }
         [Required]
+        [Display(Name ="Book Name")]
         public string BookName { get; set; }
         [Display(Name ="Book No.")]
         public int BookNo { get; set; }
