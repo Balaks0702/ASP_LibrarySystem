@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using F20_BookClub.Data;
 using F20_BookClub.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace F20_BookClub.Controllers
 {
+    [Authorize]
     public class BooksController : Controller
     {
         private readonly ApplicationDbContext _context;
