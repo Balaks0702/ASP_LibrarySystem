@@ -22,12 +22,14 @@ namespace F20_BookClub.Controllers
         }
 
         // GET: Authors
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Authors.ToListAsync());
         }
 
         // GET: Authors/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
